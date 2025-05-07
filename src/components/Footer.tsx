@@ -27,14 +27,13 @@ export function Footer() {
           <ContainerInner>
             <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/about">About</NavLink>
-                <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/speaking">Speaking</NavLink>
-                <NavLink href="/uses">Uses</NavLink>
+                <NavLink href="/rolunk">Rólunk</NavLink>
+                <NavLink href="/diakparlamentek">Diákparlamentek</NavLink>
+                <NavLink href="/archivum">Archívum</NavLink>
+                <NavLink href="/csatlakozz">Csatlakozz</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Spencer Sharp. All rights
-                reserved.
+                Készítette: <a href="https://www.linkedin.com/in/abel-nagy26/">Nagy Ábel</a> és <a href="https://www.linkedin.com/in/nimr%C3%B3d-simon-a1369b34a/">Simon Nimród</a>
               </p>
             </div>
           </ContainerInner>
