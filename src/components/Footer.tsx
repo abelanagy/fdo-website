@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
 
@@ -20,6 +23,21 @@ function NavLink({
 }
 
 export function Footer() {
+  const [order, setOrder] = useState<[string, string]>(['', ''])
+
+  useEffect(() => {
+    setOrder(
+      Math.random() < 0.5
+        ? ['Simon Nimród', 'Nagy Ábel']
+        : ['Nagy Ábel', 'Simon Nimród'],
+    )
+  }, [])
+
+  const urls: Record<string, string> = {
+    'Nagy Ábel': 'https://www.linkedin.com/in/abel-nagy26/',
+    'Simon Nimród': 'https://www.linkedin.com/in/nimr%C3%B3d-simon-a1369b34a/',
+  }
+
   return (
     <footer className="mt-32 flex-none">
       <ContainerOuter>
@@ -33,12 +51,8 @@ export function Footer() {
                 <NavLink href="/csatlakozz">Csatlakozz</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                Készítette:{' '}
-                <a href="https://www.linkedin.com/in/abel-nagy26/">Nagy Ábel</a>{' '}
-                és{' '}
-                <a href="https://www.linkedin.com/in/nimr%C3%B3d-simon-a1369b34a/">
-                  Simon Nimród
-                </a>
+                Készítette: <a href={urls[order[0]]}>{order[0]}</a> és{' '}
+                <a href={urls[order[1]]}>{order[1]}</a>
               </p>
             </div>
           </ContainerInner>
