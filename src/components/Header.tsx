@@ -121,8 +121,10 @@ function MobileNavigation(
         </div>
         <nav className="mt-6">
           <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-            <MobileNavItem href="/rolunk">Rólunk</MobileNavItem> 
-            <MobileNavItem href="/diakparlamentek">Diákparlamentek</MobileNavItem>
+            <MobileNavItem href="/rolunk">Rólunk</MobileNavItem>
+            <MobileNavItem href="/diakparlamentek">
+              Diákparlamentek
+            </MobileNavItem>
             <MobileNavItem href="/archivum">Archívum</MobileNavItem>
             <MobileNavItem href="/csatlakozz">Csatlakozz!</MobileNavItem>
           </ul>
@@ -235,10 +237,7 @@ function Avatar({
         src={logoImage}
         alt=""
         sizes={large ? '4rem' : '2.25rem'}
-        className={clsx(
-          'object-cover',
-          large ? 'h-16 w-16' : 'h-9 w-9',
-        )}
+        className={clsx('object-cover', large ? 'h-16 w-16' : 'h-9 w-9')}
         priority
       />
     </Link>

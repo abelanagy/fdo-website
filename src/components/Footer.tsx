@@ -33,7 +33,12 @@ export function Footer() {
                 <NavLink href="/csatlakozz">Csatlakozz</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                Készítette: <a href="https://www.linkedin.com/in/abel-nagy26/">Nagy Ábel</a> és <a href="https://www.linkedin.com/in/nimr%C3%B3d-simon-a1369b34a/">Simon Nimród</a>
+                Készítette:{' '}
+                <a href="https://www.linkedin.com/in/abel-nagy26/">Nagy Ábel</a>{' '}
+                és{' '}
+                <a href="https://www.linkedin.com/in/nimr%C3%B3d-simon-a1369b34a/">
+                  Simon Nimród
+                </a>
               </p>
             </div>
           </ContainerInner>

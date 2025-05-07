@@ -14,7 +14,9 @@ export interface ArticleWithSlug extends Article {
 async function importArticle(
   articleFilename: string,
 ): Promise<ArticleWithSlug> {
-  let { article } = (await import(`../app/diakparlamentek/${articleFilename}`)) as {
+  let { article } = (await import(
+    `../app/diakparlamentek/${articleFilename}`
+  )) as {
     default: React.ComponentType
     article: Article
   }
