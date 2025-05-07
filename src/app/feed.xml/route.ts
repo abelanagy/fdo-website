@@ -3,11 +3,12 @@ import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
 
 export async function GET(req: Request) {
-  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? ''
 
-  if (!siteUrl) {
+  if (siteUrl === undefined)
     throw Error('Missing NEXT_PUBLIC_SITE_URL environment variable')
-  }
+
+  if (siteUrl === '') console.warn('NEXT_PUBLIC_SITE_URL is empty')
 
   let author = {
     name: 'Fővárosi Diákparlament',
