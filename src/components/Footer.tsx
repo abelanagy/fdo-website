@@ -51,8 +51,8 @@ export function Footer() {
                 <NavLink href="/csatlakozz">Csatlakozz</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                Készítette: <a href={urls[order[0]]}>{order[0]}</a> és{' '}
-                <a href={urls[order[1]]}>{order[1]}</a>
+                Készítette: <a className='hover:text-zinc-200' href={urls[order[0]]}>{order[0]}</a> és{' '}
+                <a className='hover:text-zinc-200' href={urls[order[1]]}>{order[1]}</a>
               </p>
             </div>
           </ContainerInner>
