@@ -1,5 +1,4 @@
 'use client'
-// TODO: LOGOOOOO
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -15,28 +14,6 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import logoImage from '@/images/logo.png'
-
-function useWidth<T extends HTMLElement>() {
-  const ref = useRef<T>(null)
-  const [parentWidth, setParentWidth] = useState<number>(0)
-
-  useEffect(() => {
-    if (!ref.current) return
-    const parent = ref.current
-
-    function update() {
-      setParentWidth(parent.clientWidth)
-    }
-
-    update()
-    const resizeObserver = new ResizeObserver(update)
-    resizeObserver.observe(parent)
-
-    return () => resizeObserver.disconnect()
-  }, [])
-
-  return [ref, parentWidth] as const
-}
 
 function CloseIcon(props: Readonly<React.ComponentPropsWithoutRef<'svg'>>) {
   return (
@@ -223,37 +200,6 @@ function ThemeToggle() {
   )
 }
 
-function Title() {
-  const textRef = useRef<HTMLSpanElement>(null)
-  const [isWrapped, setIsWrapped] = useState(false)
-
-  useEffect(() => {
-    function checkWrap() {
-      if (textRef.current) {
-        setIsWrapped(textRef.current.scrollWidth > textRef.current.clientWidth)
-      }
-    }
-    checkWrap()
-    window.addEventListener('resize', checkWrap)
-    return () => window.removeEventListener('resize', checkWrap)
-  }, [])
-
-  return (
-    <span
-      ref={textRef}
-      style={{
-        display: 'inline-block',
-        maxWidth: 200,
-        whiteSpace: 'nowrap',
-        overflow: 'hidden',
-        textOverflow: 'ellipsis',
-      }}
-    >
-      {isWrapped ? 'FDÖ' : 'Fővárosi Diákönkormányzat'}
-    </span>
-  )
-}
-
 export function Header() {
   let headerRef = useRef<React.ElementRef<'div'>>(null)
 
@@ -283,7 +229,7 @@ export function Header() {
             <Link
               href="/"
               aria-label="Home"
-              className="overflow-hiddent pointer-events-auto flex min-w-0 items-center gap-2 rounded-full bg-white/90 p-0.5 px-3 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10"
+              className="pointer-events-auto flex min-w-0 items-center gap-2 overflow-hidden rounded-full bg-white/90 p-0.5 px-3 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10"
             >
               <Image
                 src={logoImage}
@@ -292,16 +238,8 @@ export function Header() {
                 className="mb-1 h-7 w-9 object-cover"
                 priority
               />
-              <h2
-                className="text-sm font-medium text-nowrap text-zinc-800 dark:text-zinc-200"
-                style={{ minWidth: 0 }}
-              >
-                <h2
-                  className="min-w-0 overflow-hidden text-sm font-medium text-nowrap text-zinc-800 dark:text-zinc-200"
-                  style={{ minWidth: 0 }}
-                >
-                  <Title />
-                </h2>
+              <h2 className="block text-sm font-medium text-nowrap text-zinc-800 max-[23rem]:hidden md:hidden lg:block dark:text-zinc-200">
+                Fővárosi Diákönkormányzat
               </h2>
             </Link>
 
