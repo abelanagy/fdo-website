@@ -59,7 +59,7 @@ const people = [
     name: 'Tallósy Áron',
     role: 'Elnök',
     imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1748276034/B68734C4-4370-4BF9-B27C-A24C3BEEDABA_1_105_c_xcrs6d.jpg',
     bio: 'Tallósy Áron vagyok, az Eötvös József Gimnázium tanulója és a Fővárosi Diákönkormányzat elnöke. Mindig is kivettem a szerepem a diákok életének a fejlesztésében, legyen az különféle ENSZ és Európai Unió diákkonferenciákon keresztül, ezt próbálom folytatni jelenleg az FDÖ-vel. Legfőbb célom, hogy a Fővárosi Diákönkormányzatnak kiépítsük az alapjait, növeljük az elérését és még jobban képviseljük a budapesti diákokat.',
   },
   {
