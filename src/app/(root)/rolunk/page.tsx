@@ -61,7 +61,8 @@ const people = [
   {
     name: 'Nyíri Botond',
     role: 'Social media',
-    imageUrl: '', // TODO: add image URL
+    imageUrl:
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1748453958/Government_Officials_Image_gpg1wc.jpg',
     bio: 'Nyíri Botond vagyok a Corvin Mátyás Gimnázium tanulója, és iskolám DÖK-társelnöke. Feladataim közé tartozik a social-media oldalak felügyelete és elérésünk bővítése. Célom, hogy az FDÖ céljait, eredményeit és terveit minél több emberhez el tudjam juttatni.',
   },
   {
@@ -86,13 +87,13 @@ const people = [
     name: 'Fuzik Zoárd',
     role: '',
     imageUrl: '', // TODO: add image URL
-    bio: '',
+    bio: 'Fuzik Zoárd vagyok, a Városmajori Gimnázium 11. évfolyamának tanulója vagyok, Jelenleg az iskola vezetőségének tagjaként, valamint alelnökeként tevékenykedem. Célom, hogy az FDÖ-n keresztül meg tudjuk erősíteni a diákok érdekképviseletét, biztosítsuk a jogainkat, és közösen formáljuk az iskolai életet.',
   },
   {
     name: 'Hejar Korkut',
     role: '',
     imageUrl: '', // TODO: add image URL
-    bio: '',
+    bio: 'Korkut Hejar vagyok, a 18. Kerületi Vörösmarty Mihály Ének-Zenei Nyelvi Ált. Iskola és Gimnázium DÖK elnöke. Az én feladatom az alapdokumentumok védelme, célom a magyar diákság helyzetének jobbá tétele.',
   },
   {
     name: 'Kiss Dániel',
@@ -103,7 +104,8 @@ const people = [
   {
     name: 'Tomka-Babucs Panna',
     role: 'Választási bizottság elnöke',
-    imageUrl: '', // TODO: add image URL
+    imageUrl:
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1748453947/Government_Officials_Photo_llbfcp.jpg',
     bio: 'Tomka-Babucs Panna vagyok a Választási bizottság elnöke, és a Kodály Zoltán Ének-zenei Általános Iskola, Gimnázium és Zenei Alapfokú Művészeti Iskola diákelnöke is. Hiszek abban, hogy dinamikus együttműködéssel képesek leszünk javítani a magyar oktatási rendszeren.',
   },
   {
