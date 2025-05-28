@@ -14,7 +14,7 @@ export function middleware(req) {
   }
 
   // Check if maintenance mode is enabled
-  const isMaintenance = process.env.MAINTENANCE_MODE === 'true'
+  const isMaintenance = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true'
 
   if (isMaintenance) {
     // Redirect to the maintenance page
