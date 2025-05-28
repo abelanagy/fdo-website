@@ -158,7 +158,7 @@ export default function About() {
                             size={24}
                             className="text-red-500 hover:text-red-600"
                           />
-                          <span className="text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100">
+                          <span className="block text-zinc-700 hover:text-zinc-900 max-sm:hidden dark:text-zinc-300 dark:hover:text-zinc-100">
                             {person.email}
                           </span>
                         </a>
@@ -171,7 +171,7 @@ export default function About() {
                           className="flex items-center gap-2"
                         >
                           <Phone size={24} className="text-red-500" />
-                          <span className="text-zinc-700 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-100">
+                          <span className="block text-zinc-700 hover:text-zinc-900 max-sm:hidden dark:text-zinc-300 dark:hover:text-zinc-100">
                             {person.phone}
                           </span>
                         </a>
