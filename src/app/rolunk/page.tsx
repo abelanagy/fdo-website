@@ -18,7 +18,7 @@ const people = [
     name: 'Tallósy Áron',
     role: 'Elnök',
     imageUrl:
-      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1748276034/B68734C4-4370-4BF9-B27C-A24C3BEEDABA_1_105_c_xcrs6d.jpg',
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/Images_of_Officials_1398_m5jhwo.jpg',
     bio: 'Tallósy Áron vagyok, az Eötvös József Gimnázium tanulója és a Fővárosi Diákönkormányzat elnöke. Mindig is kivettem a szerepem a diákok életének a fejlesztésében, legyen az különféle ENSZ és Európai Unió diákkonferenciákon keresztül, ezt próbálom folytatni jelenleg az FDÖ-vel. Legfőbb célom, hogy a Fővárosi Diákönkormányzatnak kiépítsük az alapjait, növeljük az elérését és még jobban képviseljük a budapesti diákokat.',
     email: 'tallosy.aron@gmail.com',
     phone: '+36203907319',
@@ -47,8 +47,9 @@ const people = [
   {
     section: 'Kormánytagok',
     name: 'Nkanyimuo Bruno',
-    role: '',
-    imageUrl: '', // TODO: add image URL
+    role: 'Kormánytag',
+    imageUrl:
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/Government_Officials_Images_xmczel.jpg', // TODO: add image URL
     bio: 'Nkanyimuo Bruno vagyok, a Maimonidész Gimnázium Diákönkormányzatának elnöke. A budapesti diákok helyzete régóta foglalkoztat, de a mostani tanévben határoztam el igazán, hogy tenni is akarok az ügyeinkért. Hiszem, hogy a diákoknak már fiatalon politikailag tájékozottnak és a tiszta demokráciára igényesnek kell lenniük, és ezt a célt szeretném szolgálni.',
   },
   {
