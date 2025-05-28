@@ -27,7 +27,7 @@ export default function MaintenancePage() {
     //   </div>
     // </div>
     <>
-      <Container className="mt-16 text-center sm:mt-32">
+      <Container className="mt-36 text-center">
         <Image
           src={logoImage}
           alt="Fővárosi Diákönkormányzat"
