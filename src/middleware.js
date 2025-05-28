@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server'
 
 // Define paths that should not trigger the maintenance mode (e.g., maintenance page itself, API routes)
-const maintenancePaths = ['/maintenance']
+const maintenancePaths = ['/maintenance', '/api', '/_next', '/favicon.ico']
 
 export function middleware(req) {
   const url = req.nextUrl.clone()
