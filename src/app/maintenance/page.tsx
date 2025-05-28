@@ -34,13 +34,24 @@ export default function MaintenancePage() {
           className="mx-auto mb-1 h-25 w-32 object-cover"
           priority
         />
-        <LineWobble
-          size="120"
-          stroke="5"
-          bgOpacity="0.1"
-          speed="1.75"
-          color="black"
-        />
+        <div className="block dark:hidden">
+          <LineWobble
+            size="120"
+            stroke="5"
+            bgOpacity="0.1"
+            speed="1.75"
+            color="black"
+          />
+        </div>
+        <div className="hidden dark:block">
+          <LineWobble
+            size="120"
+            stroke="5"
+            bgOpacity="0.1"
+            speed="1.75"
+            color="white"
+          />
+        </div>
         <h1 className="mt-4 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
           Valami készül...
         </h1>
