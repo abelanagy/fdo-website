@@ -1,0 +1,18 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'FDÖ',
+  date: '2024-06-10',
+  title: 'Diákparlament - Ideiglenes Kormány',
+  description:
+    'Feláll az FDÖ első ideiglenes kormánya Nagy Barnabás vezetésével, elfogadják az alapdokumentumokat, beiktatják a tisztségviselőket, köztük alelnökként Csibrán Barnát, Antal Jázmint és Seiferer Robint, valamint Douglas Petrát a Választási Bizottság, Korkut Hejart az Etikai és Felügyeleti Bizottság, és Tóth-Göde Gergőt Házelnökként.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+Feláll az FDÖ első ideiglenes kormánya Nagy Barnabás vezetésével, elfogadásra kerülnek az alapdokumentumok, és beiktatásra kerülnek a tisztségviselők. Az alelnöki tisztséget Csibrán Barna, Antal Jázmin és Seiferer Robin tölti be, a Választási Bizottság elnöke Douglas Petra, az Etikai és Felügyeleti Bizottság elnöke Korkut Hejar, a Házelnök Tóth-Göde Gergő

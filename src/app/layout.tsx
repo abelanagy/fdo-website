@@ -1,7 +1,6 @@
 import { type Metadata } from 'next'
 
 import { Providers } from '@/app/providers'
-import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
 
@@ -10,7 +9,6 @@ export const metadata: Metadata = {
     template: '%s - Fővárosi Diákönkormányzat',
     default: 'Fővárosi Diákönkormányzat - ', // TODO: add subtitle
   },
-  // TODO : add description
   description:
     'Fővárosi Diákönkormányzat - A Fővárosi Diákönkormányzat célja, hogy a diákok érdekeit képviselje és támogassa a diákéletet Budapesten.',
   alternates: {
@@ -22,15 +20,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+    <html lang="hu" className="h-full antialiased" suppressHydrationWarning>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
         <Providers>
           <div className="flex w-full">
-            <Layout>{children}</Layout>
+            <div className="fixed inset-0 flex justify-center sm:px-8">
+              <div className="flex w-full max-w-7xl lg:px-8">
+                <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
+              </div>
+            </div>
+            <div className="relative flex w-full flex-col">{children}</div>
           </div>
         </Providers>
       </body>
