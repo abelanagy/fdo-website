@@ -2,6 +2,7 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
+import * as motion from 'motion/react-client'
 
 import { Phone, Mail } from 'lucide-react'
 import { SimpleLayout } from '@/components/SimpleLayout'
@@ -125,7 +126,7 @@ export default function About() {
       intro="We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients."
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <ul
+        <motion.ul
           role="list"
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-1 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
         >
@@ -136,7 +137,14 @@ export default function About() {
                   {person.section}
                 </h2>
               )}
-              <li key={person.name} className="flex flex-col gap-4 xl:flex-row">
+              <motion.li
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                key={person.name}
+                className="flex flex-col gap-4 xl:flex-row"
+              >
                 <img
                   alt=""
                   src={person.imageUrl}
@@ -182,13 +190,13 @@ export default function About() {
                     )}
                   </ul>
                 </div>
-              </li>
+              </motion.li>
               {person.divider && (
                 <hr className="my-0 border-zinc-200 dark:border-zinc-700" />
               )}
             </>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </SimpleLayout>
   )
