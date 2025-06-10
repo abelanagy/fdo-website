@@ -22,6 +22,7 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import { InstagramEmbed } from '@/components/InstagramEmbed'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -312,6 +313,7 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
+            <InstagramEmbed url="https://www.instagram.com/p/DKpnsUuNuAP/" />
             <Newsletter />
             <Resume />
           </div>

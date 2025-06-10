@@ -10,7 +10,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 export const metadata: Metadata = {
   title: 'Rólunk',
   description:
-    'I’m Spencer Sharp. I live in New York City, where I design the future.',
+    'Ismertétek meg elhivatott csapatunkat, akik a budapesti diákok érdekeit képviselik.',
 }
 
 const people = [
@@ -36,28 +36,22 @@ const people = [
   {
     name: 'Tóth-Maros Ádám',
     role: 'Alelnök',
-    imageUrl: '', // TODO: add image URL
+    imageUrl:
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1749552983/486575651_1358854412206931_248072288019383679_n_hqx7gl.jpg',
     bio: 'Tóth-Maros Ádám vagyok, a Budapesti Fazekas Mihály Gimnázium tanulója és a Fővárosi Diákönkormányzat alelnöke. A második ciklusomat töltöm az FDÖ-ben, első ciklusom alatt kormánytag voltam. Az én kezem alatt indult el a Mentálhigiénés Javaslatcsomag projektje, ami jelenleg is aktívan fut. Szívügyemnek tartom a diákok jólétét, mindennapos mosolygását, és célom, hogy tanulmányaim végéig a diákokért dolgozzam.',
     divider: true,
-    email: '', // TODO: add email
-    phone: '', // TODO: add phone number
+    email: 'tothmarosadam.fdo@gmail.com',
+    phone: '+36706074212',
   },
 
   // -------- újonnan hozzáadott tagok --------
-
   {
     section: 'Kormánytagok',
-    name: 'Nkanyimuo Bruno',
-    role: 'Kormánytag',
+    name: 'Chen Wenda',
+    role: 'Pénzügyes',
     imageUrl:
-      'https://res.cloudinary.com/dqi8dotxx/image/upload/Government_Officials_Images_xmczel.jpg', // TODO: add image URL
-    bio: 'Nkanyimuo Bruno vagyok, a Maimonidész Gimnázium Diákönkormányzatának elnöke. A budapesti diákok helyzete régóta foglalkoztat, de a mostani tanévben határoztam el igazán, hogy tenni is akarok az ügyeinkért. Hiszem, hogy a diákoknak már fiatalon politikailag tájékozottnak és a tiszta demokráciára igényesnek kell lenniük, és ezt a célt szeretném szolgálni.',
-  },
-  {
-    name: 'Bagyinszki Luca',
-    role: '',
-    imageUrl: '', // TODO: add image URL
-    bio: 'Bagyinszki Luca vagyok, a Madách Imre Gimnázium egyik diákpolgármestere. Szenvedélyem a szervezés, feladatom a kormány segítése és támogatása. Célom a budapesti diákközösség építése valamint az iskolák közötti kapcsolatok kiterjesztése és fejlesztése.',
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1749551092/Government_Officials_Images_1_dw2ujv.jpg',
+    bio: 'Chen Wenda vagyok, a Szent István Gimnázium diákönkormányzatának alelnöke. Mindig is érdeklődtem a pénzügyek iránt, ezért vállaltam szerepet az FDÖ egyesület létrehozásában és az adománygyűjtés megszervezésében. Célom, hogy a beérkező támogatásokból minél több programot és eseményt szervezzünk a budapesti diákság számára!',
   },
   {
     name: 'Nyíri Botond',
@@ -67,40 +61,46 @@ const people = [
     bio: 'Nyíri Botond vagyok a Corvin Mátyás Gimnázium tanulója, és iskolám DÖK-társelnöke. Feladataim közé tartozik a social-media oldalak felügyelete és elérésünk bővítése. Célom, hogy az FDÖ céljait, eredményeit és terveit minél több emberhez el tudjam juttatni.',
   },
   {
-    name: 'Bánfi Boglárka',
-    role: '',
-    imageUrl: '', // TODO: add image URL
-    bio: '',
+    name: 'Szentpéteri Nelli',
+    role: 'Social media',
+    imageUrl:
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1749552112/Nellirol_Kep_Image_anhr1e.jpg',
+    bio: 'Szentpéteri Kornélia vagyok, a Xántus János Két Tanítási Nyelvű Gimnázium diákönkormányzatának alelnöke. Én vagyok felelős a közösségi oldalak igazgatásáért, és az online kapcsolattartó szerepért. A célom, hogy minden platformon el tudjatok érni minket.',
   },
   {
-    name: 'Chen Wenda',
-    role: 'Pénzügyes',
-    imageUrl: '', // TODO: add image URL
-    bio: 'Chen Wenda vagyok, a Szent István Gimnázium diákönkormányzatának alelnöke. Mindig is érdeklődtem a pénzügyek iránt, ezért vállaltam szerepet az FDÖ egyesület létrehozásában és az adománygyűjtés megszervezésében. Célom, hogy a beérkező támogatásokból minél több programot és eseményt szervezzünk a budapesti diákság számára!',
+    name: 'Bagyinszki Luca',
+    role: 'Social media',
+    imageUrl:
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1749551089/Government_Officials_Images_t8llkv.jpg',
+    bio: 'Bagyinszki Luca vagyok, a Madách Imre Gimnázium egyik diákpolgármestere. Szenvedélyem a szervezés, feladatom a kormány segítése és támogatása. Célom a budapesti diákközösség építése valamint az iskolák közötti kapcsolatok kiterjesztése és fejlesztése.',
+  },
+  {
+    name: 'Nkanyimuo Bruno',
+    role: 'Kormánytag',
+    imageUrl:
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/Government_Officials_Images_xmczel.jpg',
+    bio: 'Nkanyimuo Bruno vagyok, a Maimonidész Gimnázium Diákönkormányzatának elnöke. A budapesti diákok helyzete régóta foglalkoztat, de a mostani tanévben határoztam el igazán, hogy tenni is akarok az ügyeinkért. Hiszem, hogy a diákoknak már fiatalon politikailag tájékozottnak és a tiszta demokráciára igényesnek kell lenniük, és ezt a célt szeretném szolgálni.',
   },
   {
     name: 'Kappéter Benedek',
-    role: '',
-    imageUrl: '', // TODO: add image URL
+    role: 'Kormánytag',
+    imageUrl:
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1749553687/IMG_1850_lxh7y4.jpg',
     bio: 'Kappéter Benedek vagyok, a Szilágyi Erzsébet Gimnázium tanulója, az FDÖ kormánytagja. Feladatom egy iskolai DÖK-keretrendszer létrehozása, valamint szeretném segíteni az FDÖ “növekedését”. Célom, hogy az e ciklus alatt történő együttműködések lefektessék a jövőbeni FDÖ alapjait.',
   },
   {
     name: 'Fuzik Zoárd',
-    role: '',
-    imageUrl: '', // TODO: add image URL
+    role: 'Kormánytag',
+    imageUrl:
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1749553467/Upscaled_IMG_1975_jn74ic.jpg',
     bio: 'Fuzik Zoárd vagyok, a Városmajori Gimnázium 11. évfolyamának tanulója vagyok, Jelenleg az iskola vezetőségének tagjaként, valamint alelnökeként tevékenykedem. Célom, hogy az FDÖ-n keresztül meg tudjuk erősíteni a diákok érdekképviseletét, biztosítsuk a jogainkat, és közösen formáljuk az iskolai életet.',
   },
   {
-    name: 'Hejar Korkut',
-    role: '',
-    imageUrl: '', // TODO: add image URL
-    bio: 'Korkut Hejar vagyok, a 18. Kerületi Vörösmarty Mihály Ének-Zenei Nyelvi Ált. Iskola és Gimnázium DÖK elnöke. Az én feladatom az alapdokumentumok védelme, célom a magyar diákság helyzetének jobbá tétele.',
-  },
-  {
     name: 'Kiss Dániel',
-    role: '',
-    imageUrl: '', // TODO: add image URL
-    bio: '',
+    role: 'Kormánytag',
+    imageUrl:
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1749551046/Images_of_Government_Officials_w0kxjq.jpg',
+    bio: 'Kiss Dániel vagyok, a Xántus János Két Tanítási Nyelvű Gimnázium 11. évfolyamos tanulója és a Diákönkormányzat elnöke. Fontosnak tartom, hogy a diákoknak legyen hangjuk, és aktívan részt vehessenek az iskolai döntéshozatalban. Az FDÖ-n belül is azért dolgozom, hogy ez a szemlélet város szinten is érvényesüljön.',
   },
   {
     name: 'Tomka-Babucs Panna',
@@ -110,20 +110,26 @@ const people = [
     bio: 'Tomka-Babucs Panna vagyok a Választási bizottság elnöke, és a Kodály Zoltán Ének-zenei Általános Iskola, Gimnázium és Zenei Alapfokú Művészeti Iskola diákelnöke is. Hiszek abban, hogy dinamikus együttműködéssel képesek leszünk javítani a magyar oktatási rendszeren.',
   },
   {
-    name: 'Szentpéteri Nelli',
-    role: 'Social media',
-    imageUrl: '', // TODO: add image URL
-    bio: 'Szentpéteri Kornélia vagyok, a Xántus János Két Tanítási Nyelvű Gimnázium diákönkormányzatának alelnöke. Én vagyok felelős a közösségi oldalak igazgatásáért, és az online kapcsolattartó szerepért. A célom, hogy minden platformon el tudjatok érni minket.',
+    name: 'Hejar Korkut',
+    role: 'Etikai bizottság elnöke',
+    imageUrl:
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1749595306/Email_from_Eo%CC%88tvo%CC%88s_Jo%CC%81zsef_Gimna%CC%81zium_ypzaaa.jpg',
+    bio: 'Korkut Hejar vagyok, a 18. Kerületi Vörösmarty Mihály Ének-Zenei Nyelvi Ált. Iskola és Gimnázium DÖK elnöke. Az én feladatom az alapdokumentumok védelme, célom a magyar diákság helyzetének jobbá tétele.',
   },
-
-  // More people...
 ]
+// TODO: add bogi, amikor megszavazzák
+//   {
+//   name: 'Bánfi Boglárka',
+//   role: '',
+//   imageUrl: '',
+//   bio: '',
+// },
 
 export default function About() {
   return (
     <SimpleLayout
       title="Rólunk"
-      intro="We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients."
+      intro="Ismerjétek meg elhivatott csapatunkat, akik a budapesti diákok érdekeit képviselik. Célunk, hogy a diákok hangja eljusson a döntéshozókhoz, és közösen alakítsuk a jövő oktatását."
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.ul
