@@ -4,10 +4,17 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import * as motion from 'motion/react-client'
 
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
-    <article className="md:grid md:grid-cols-4 md:items-baseline">
+    <motion.article
+      className="md:grid md:grid-cols-4 md:items-baseline"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+    >
       <Card className="md:col-span-3">
         <Card.Title href={`/diakparlamentek/${article.slug}`}>
           {article.title}
@@ -30,7 +37,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
       >
         {formatDate(article.date)}
       </Card.Eyebrow>
-    </article>
+    </motion.article>
   )
 }
 
