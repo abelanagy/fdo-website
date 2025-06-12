@@ -28,7 +28,7 @@ const people = [
     name: 'Cserni Milán',
     role: 'Alelnök',
     imageUrl:
-      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1748422301/IMG_0625_wwj4eh.jpg',
+      'https://res.cloudinary.com/dqi8dotxx/image/upload/v1749716258/IMG_3805_b3pvfy.jpg',
     bio: 'Cserni Milán vagyok, az Eötvös József Gimnázium tanulója és a Fővárosi Diákönkormányzat alelnöke. Amióta lehetőségem nyílt rá, osztályképviselőként mindig is aktívan részt vettem a diákság érdekképviseletében. Hiszem, hogy az elkövetkező évben olyan erős alapokat tudunk lefektetni, amelyek lehetővé teszik az FDÖ számára, hogy a jövőben a lehető hatékonyabban képviselje a diákságot.',
     email: 'csernimm@gmail.com',
     phone: '+36203424996',
