@@ -37,7 +37,6 @@ const people = [
     imageUrl: aron.src,
     bio: 'Tallósy Áron vagyok, az Eötvös József Gimnázium tanulója és a Fővárosi Diákönkormányzat elnöke. Mindig is kivettem a szerepem a diákok életének a fejlesztésében, legyen az különféle ENSZ és Európai Unió diákkonferenciákon keresztül, ezt próbálom folytatni jelenleg az FDÖ-vel. Legfőbb célom, hogy a Fővárosi Diákönkormányzatnak kiépítsük az alapjait, növeljük az elérését és még jobban képviseljük a budapesti diákokat.',
     email: 'tallosy.aron@gmail.com',
-    phone: '+36203907319',
   },
   {
     name: 'Cserni Milán',
@@ -45,7 +44,6 @@ const people = [
     imageUrl: milan.src,
     bio: 'Cserni Milán vagyok, az Eötvös József Gimnázium tanulója és a Fővárosi Diákönkormányzat alelnöke. Amióta lehetőségem nyílt rá, osztályképviselőként mindig is aktívan részt vettem a diákság érdekképviseletében. Hiszem, hogy az elkövetkező évben olyan erős alapokat tudunk lefektetni, amelyek lehetővé teszik az FDÖ számára, hogy a jövőben a lehető hatékonyabban képviselje a diákságot.',
     email: 'csernimm@gmail.com',
-    phone: '+36203424996',
   },
   {
     name: 'Bagyinszki Luca',
