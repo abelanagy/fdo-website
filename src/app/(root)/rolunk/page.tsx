@@ -180,19 +180,6 @@ export default function About() {
                         </a>
                       </li>
                     )}
-                    {person.phone && (
-                      <li>
-                        <a
-                          href={`tel:${person.phone}`}
-                          className="flex items-center gap-2"
-                        >
-                          <Phone size={24} className="text-red-500" />
-                          <span className="block text-zinc-700 hover:text-zinc-900 max-sm:hidden dark:text-zinc-300 dark:hover:text-zinc-100">
-                            {person.phone}
-                          </span>
-                        </a>
-                      </li>
-                    )}
                   </ul>
                 </div>
               </motion.li>

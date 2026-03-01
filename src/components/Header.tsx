@@ -82,10 +82,44 @@ function MobileNavItem({
 }>) {
   return (
     <li>
-      <PopoverButton as={Link} href={href} className="block py-2">
+      <PopoverButton as={Link} href={href} className="block py-1">
         {children}
       </PopoverButton>
     </li>
+  )
+}
+
+function VotingAlertBar() {
+  return (
+    <Link
+      href="/szavazas"
+      className="pointer-events-auto relative block overflow-hidden bg-red-600 py-2 text-sm font-semibold text-white"
+    >
+      <div className="flex min-w-max [animation:marquee_18s_linear_infinite] whitespace-nowrap">
+        <span className="px-4">
+          Elindult az idei elnökválasztás. Kattints ide, es add le a
+          szavazatodat.
+        </span>
+        <span className="px-4" aria-hidden="true">
+          Elindult az idei elnökválasztás. Kattints ide, es add le a
+          szavazatodat.
+        </span>
+        <span className="px-4" aria-hidden="true">
+          Elindult az idei elnökválasztás. Kattints ide, es add le a
+          szavazatodat.
+        </span>
+      </div>
+      <style jsx>{`
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-33.333%);
+          }
+        }
+      `}</style>
+    </Link>
   )
 }
 
@@ -213,9 +247,10 @@ export function Header() {
         marginBottom: 'var(--header-mb)',
       }}
     >
+      <VotingAlertBar />
       <div
         ref={headerRef}
-        className="top-0 z-10 h-16 pt-6"
+        className="top-0 z-10 h-16 pt-3"
         style={{
           position: 'var(--header-position)' as React.CSSProperties['position'],
         }}

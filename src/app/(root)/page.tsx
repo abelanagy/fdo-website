@@ -19,6 +19,8 @@ import postImage4 from '@/images/photos/post4.jpg'
 import postImage5 from '@/images/photos/post5.jpg'
 import postImage6 from '@/images/photos/post6.jpg'
 import postImage7 from '@/images/photos/post7.jpg'
+import postImage8 from '@/images/photos/post8.png'
+import postImage9 from '@/images/photos/post9.png'
 import { Mail, Facebook, Instagram, Linkedin, ArrowRight } from 'lucide-react'
 
 function Article({ article }: { article: ArticleWithSlug }) {
@@ -70,13 +72,22 @@ interface InstagramPost {
   alt: string
 }
 
-//   {
-//    href: 'https://www.instagram.com/p/DP_EbNDjd88/',
-//    src: postImage7,
-//    alt: '10.17. Diákparlament',
-//  },
-
 const instagramPosts: InstagramPost[] = [
+  {
+    href: '',
+    src: postImage9,
+    alt: 'Tomka-Babucs Panna bemutatkozása',
+  },
+  {
+    href: '',
+    src: postImage8,
+    alt: 'Ciszár Hunor Gergely bemutatkozása',
+  },
+  //{
+  //  href: 'https://www.instagram.com/p/DP_EbNDjd88/',
+  //  src: postImage7,
+  //  alt: '10.17. Diákparlament',
+  //},
   {
     href: 'https://www.instagram.com/p/DPBECiAjf5j/',
     src: postImage6,
