@@ -1,9 +1,21 @@
+'use client'
+
+import { useEffect } from 'react'
+
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Button } from '@/components/Button'
 
 const tallyFormUrl = 'https://tally.so/r/PdOoL0'
 
 export default function SzavazasRedirectPage() {
+  useEffect(() => {
+    let timeoutId = window.setTimeout(() => {
+      window.location.replace(tallyFormUrl)
+    }, 900)
+
+    return () => window.clearTimeout(timeoutId)
+  }, [])
+
   return (
     <SimpleLayout
       title="Átirányítás a szavazásra…"
@@ -39,11 +51,6 @@ export default function SzavazasRedirectPage() {
           </div>
         </div>
       </div>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `setTimeout(function(){window.location.href='${tallyFormUrl}';}, 900);`,
-        }}
-      />
     </SimpleLayout>
   )
 }
